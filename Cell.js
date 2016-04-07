@@ -1,9 +1,8 @@
 // store all the sentences as indexs of and array
 // like this ["Lusindiso : 100MB .", Lolito : 400MB ",]
-//use map to map data
-//use match to get the name
-//use match for the digits.
-//loop through your map to get the max
+//use array to map data
+//use math to get the biggest
+//loop through your loop to get the max
 
 
 
@@ -42,7 +41,7 @@ var people = [person1, person2, person3, person4];
           // console.log(people);
 
 
-var x = [];
+var data = [];
 
 for (var i = 0; i < people.length; i++){
 //printing out only the indexes
@@ -60,8 +59,31 @@ for (var i = 0; i < people.length; i++){
 // console.log(person4[0]);
 
 //pushing every index into an array
-x.push(person1[0],
-       person2[0],
-       person3[0],
-       person4[0]);
- console.log(x);
+data.push(person1[0],
+        person2[0],
+        person3[0],
+        person4[0]
+      );
+ console.log(data);
+
+//create my variables for the apps
+
+var tooter = 2;
+var faceblock = 2;
+var instantgam = 3;
+var snaptalk = 6;
+var lankedOn = 1;
+
+ //loop through my Array of data used by each person;
+
+data.forEach(function(ad){
+      console.log(ad)
+
+
+})
+
+//check which person used which app and compare
+var walter = "Walter sent: “Hello. I’ve got Faceblock and Instantgam. I’m too old for the other ones."
+var jesse = "Jesse sent: “Yo! I’ve got ‘em all. Tooter, Faceblock, Instantgam, Snaptalk.”"
+var saul = "Saul sent: I’m on LankedOn for Business. And I have an Instantgam account for my cats. Oh, and Faceblock for my ex-husbands."
+var gus = "Gus sent: “I use Tooter and Instantgam. My customers aren’t on the others, so I can’t get them to engage with my brand there."
